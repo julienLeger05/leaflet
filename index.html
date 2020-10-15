@@ -1,27 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Leaflet</title>
     <!--Inclusion de la bibliothèque Leaflet et sa feuille de style.-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <!—Insérer leaflet.js après sa feuille de style-->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <!--Une feuille de style personnelle éventuellement<link rel="stylesheet" href="style.css">-->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <h1>Afficher une carte avec Leaflet</h1>
-    <select name="c" id="">
-        <option class='gap'value="">gap</option>
-        <option class='nice 'value="">nice</option>
-        <option class="paris" value="">paris</option>
+    <select name="c" id="" class="c">
+      <option class="ville" value="[44.566667, 6.083333]">gap</option>
+      <option class="ville" value="[43.696036, 7.265592]">nice</option>
+      <option class="ville" value="[48.856614, 2.352221]">paris</option>
     </select>
     <div id="maCarte"></div>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>
